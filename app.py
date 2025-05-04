@@ -1,8 +1,6 @@
 from flask import Flask, request, jsonify, render_template
-from aiogram import Bot, Dispatcher, types
-from aiogram.filters.command import Command
 import telebot
-TOKEN = "8098269537:AAELl2G8f91lHmgCxaRgC1xUJnF4hQU1QEQ"
+TOKEN = "Token"
 my_id = 8006053775
 bot = telebot.TeleBot(TOKEN)
 app = Flask(__name__)
