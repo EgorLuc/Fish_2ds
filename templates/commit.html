@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оплата прошла успешно</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding-top: 50px;
+        }
+
+        .success-container {
+            text-align: center;
+            width: 90%;
+            max-width: 400px;
+        }
+
+        .circle {
+            width: 25vw;
+            height: 25vw;
+            max-width: 100px;
+            max-height: 100px;
+            background-color: #8a2be2;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 20px auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .checkmark {
+            width: 60%;
+            height: 30%;
+            border: solid white;
+            border-width: 0 8px 8px 0;
+            transform: rotate(45deg);
+            position: absolute;
+            top: 25%;
+            left: 20%;
+            opacity: 0;
+            animation: draw-checkmark 1s ease-in-out forwards;
+            animation-delay: 0.5s;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding-top: 30px;
+            }
+
+            .circle {
+                 margin-bottom: 15px;
+            }
+
+            .checkmark {
+                border-width: 0 6px 6px 0;
+            }
+
+            .success-text {
+                font-size: 20px;
+            }
+        }
+
+        @keyframes draw-checkmark {
+            0% {
+                width: 0;
+                height: 0;
+                opacity: 0;
+            }
+            50% {
+                width: 60%;
+                height: 0;
+                opacity: 1;
+            }
+            100% {
+                 width: 60%;
+                 height: 30%;
+                 opacity: 1;
+            }
+        }
+
+
+        .success-text {
+            color: #333;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="success-container">
+        <div class="circle">
+            <div class="checkmark"></div>
+        </div>
+        <div class="success-text">
+            Оплата прошла успешно
+        </div>
+    </div>
+
+    <script>
+        console.log("Страница загружена. Анимация галочки запущена через CSS.");
+    </script>
+
+</body>
+</html>
