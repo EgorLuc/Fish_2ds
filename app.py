@@ -28,8 +28,5 @@ def index():
 
     else:
         return render_template('index.html')
-async def main():
-    await dp.start_polling(bot)
 if __name__ == '__main__':
     app.run(debug=True)
-    asyncio.run(main())
