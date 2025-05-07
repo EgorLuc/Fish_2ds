@@ -9,7 +9,7 @@
 
 Библиотека для работы с телеграмм-ботом PyTelegramBotApi (<code>pip install PyTelegramBotAPI</code>)
 
-на строках 3 и 4 надо вставить свой token и id
+на строках 3 и 4 надо вставить свой token получениый в botfather и id своего аккаунта
 
 Создателя можно найти тут --> https://t.me/small_allmuted
 
